@@ -2,9 +2,9 @@ import { defineOperationApp } from '@directus/extensions-sdk';
 
 export default defineOperationApp({
 	id: 'operation-unique-slugify',
-	name: 'Slugify',
+	name: 'Unique Slugify',
 	icon: 'box',
-	description: 'Unique slugifier',
+	description: 'Slugify your fields ensuring uniqueness',
 	overview: ({ valueField, slugField, separator }) => [
 		{
 			label: 'Field to be used for slugging',
