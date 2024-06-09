@@ -11,7 +11,12 @@ This Directus operation extension ensures that the `slug` (another field can be 
 ## Installation
 
 1. **Package Installation**:
-   - Install the package using `npm i directus-operation-unique-slugify`
+   - Install the package using the choice of your package manager (please use the package manager that Directus uses in your Directus folder)
+      - `npm i directus-operation-unique-slugify`
+      - `pnpm install directus-operation-unique-slugify`
+      - `yarn add directus-operation-unique-slugify`
+   - For docker version of Directus please use below:
+      - `pnpm install directus-operation-unique-slugify`
 
 2. **Restart Directus**:
    - Restart your Directus instance to load the new operation extension.
