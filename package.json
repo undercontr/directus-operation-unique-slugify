@@ -1,14 +1,19 @@
 {
 	"name": "directus-operation-unique-slugify",
 	"description": "Ensure uniqueness of slugs in Directus with workflows",
-	"author": {
-		"email": "onder.alkan15@gmail.com",
-		"name": "undercontr",
-		"url": "https://github.com/undercontr"
+	"author": "onder.alkan15@gmail.com",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/undercontr/directus-operation-unique-slugify"
 	},
+	"bugs": {
+		"url": "https://github.com/undercontr/directus-operation-unique-slugify/issues",
+		"email": "onder.alkan15@gmail.com"
+	},
+	"homepage": "https://github.com/undercontr/directus-operation-unique-slugify",
 	"icon": "extension",
 	"license": "MIT",
-	"version": "1.0",
+	"version": "1.0.0",
 	"keywords": [
 		"directus",
 		"directus-extension",
