@@ -1,5 +1,5 @@
 {
-	"name": "directus-operation-unique-slugify",
+	"name": "directus-extension-unique-slugify",
 	"description": "Ensure uniqueness of slugs in Directus with workflows",
 	"author": "onder.alkan15@gmail.com",
 	"repository": {
