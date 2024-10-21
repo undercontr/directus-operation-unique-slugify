@@ -1,6 +1,6 @@
 # Directus Operation Extension: Unique Slugify
 
-This Directus operation extension ensures that the `slug` (another field can be selected) field of a collection is unique by generating a slug based on the `title` (another field can be selected) field and add anm optional slug prefix. If the generated slug already exists, it appends a numeric suffix to make it unique.
+This Directus operation extension ensures that the `slug` (another field can be selected) field of a collection is unique by generating a slug based on the `title` (another field can be selected) field and add an optional slug prefix. If the generated slug already exists, it appends a numeric suffix to make it unique.
 
 ## Features
 
