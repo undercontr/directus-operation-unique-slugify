@@ -5,7 +5,7 @@ export default defineOperationApp({
 	name: 'Unique Slugify',
 	icon: 'box',
 	description: 'Slugify your fields ensuring uniqueness',
-	overview: ({ valueField, slugField, separator }) => [
+	overview: ({ valueField, slugField, prefixField, separator }) => [
 		{
 			label: 'Field to be used for slugging',
 			text: valueField,
@@ -13,6 +13,10 @@ export default defineOperationApp({
 		{
 			label: 'Field that slug should be assigned',
 			text: slugField,
+		},
+		{
+			label: 'Slug prefix',
+			text: prefixField,
 		},
 		{
 			label: "Define a character to be used space replacement",
@@ -36,6 +40,16 @@ export default defineOperationApp({
 			meta: {
 				width: 'half',
 				interface: 'input',
+			},
+		},
+		{
+			field: 'prefixField',
+			name: 'Slug prefix',
+			type: 'string',
+			meta: {
+				width: 'half',
+				interface: 'input',
+				note: 'Enter a prefix that is used in front of the title slug. Preceding and succeeding slashes are removed.',
 			},
 		},
 		{
