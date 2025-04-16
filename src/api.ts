@@ -4,6 +4,7 @@ import slugify from "slugify";
 type Options = {
   valueField: string;
   slugField: string;
+  prefixField: string;
   separator: string;
 };
 
@@ -12,7 +13,7 @@ type Data = Record<string, any>;
 export default defineOperationApi<Options>({
   id: "operation-unique-slugify",
   handler: async (
-    { valueField, slugField, separator },
+    { valueField, slugField, prefixField, separator },
     { services, data: dataRaw, getSchema }
   ) => {
     const data = dataRaw as Data;
@@ -31,9 +32,12 @@ export default defineOperationApi<Options>({
       accountability: data.accountability,
     });
 
-    const baseSlug = slugify(title, {
+    const prefixedSlug = prefixField ? prefixField.replace(/^\/|\/$/g, '') + '/' + title : title;
+
+    const baseSlug = slugify(prefixedSlug, {
       lower: true,
       replacement: separator,
+      remove: /[*+~.()'"!:@]/g,
     });
 
     let uniqueSlug = baseSlug;
